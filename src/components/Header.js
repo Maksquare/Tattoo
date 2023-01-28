@@ -28,10 +28,10 @@ const Header = () => {
       className={`${isActive ? 'h-[100px] lg:h-[110px] shadow-lg' : 'h-[120px] lg:h-[150px]'
         }  bg-white fixed left-0 right-0 z-10 max-w-[1920px] w-full mx-auto transition-all duration-300`}
     >
-      <div className='flex justify-between items-center h-full pl-[50px] pr-[60px]'>
+      <div className='flex justify-between items-center h-full pl-[0px]] pr-[60px]'>
         {/* logo */}
         <Link to='/'>
-          <img className='w-[250px] h-[250px]' src={logo} alt='' />
+          <img className='w-[230px] h-[230px]' src={logo} alt='' />
         </Link>
         {/* nav - initially is hidden - show on desktop*/}
         <div className='hidden xl:flex'>
