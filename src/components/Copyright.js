@@ -18,7 +18,7 @@ const Copyright = () => {
           className='tracking-[0.02em] text-base'
         >
           &copy; 2022
-          <span className='font-semibold text-white'>The Void Tattoo.</span>
+          <span className='font-semibold text-white'> Natty Tattoo</span>
           All rights reserved.
         </motion.div>
       </div>

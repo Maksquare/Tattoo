@@ -16,7 +16,7 @@ const Skills = () => {
   });
 
   const [fullBody, setFullBody] = useState(0);
-  const [piercing, setPiercing] = useState(0);
+  // const [piercing, setPiercing] = useState(0);
   const [fullColor, setFullColor] = useState(0);
   const [temporary, setTemporary] = useState(0);
 
@@ -26,9 +26,9 @@ const Skills = () => {
         if (fullBody < 90) {
           setFullBody(fullBody + 1);
         }
-        if (piercing < 80) {
-          setPiercing(piercing + 1);
-        }
+        // if (piercing < 80) {
+        //   setPiercing(piercing + 1);
+        // }
         if (fullColor < 75) {
           setFullColor(fullColor + 1);
         }
@@ -38,11 +38,11 @@ const Skills = () => {
       }, 50);
     } else {
       setFullBody(0);
-      setPiercing(0);
+      // setPiercing(0);
       setFullColor(0);
       setTemporary(0);
-    }
-  }, [inView, fullBody, piercing, fullBody, temporary]);
+    } //[inView, fullBody, piercing, fullBody, temporary]
+  }, [inView, fullColor, fullBody, temporary]);
 
   const styles = {
     path: {
@@ -79,7 +79,7 @@ const Skills = () => {
               Full Body Tatoo
             </div>
           </div>
-          <div className='w-[150px] lg:w-[275px] flex flex-col justify-center items-center gap-y-6'>
+          {/* <div className='w-[150px] lg:w-[275px] flex flex-col justify-center items-center gap-y-6'>
             <CircularProgressbar
               styles={styles}
               strokeWidth={1}
@@ -89,7 +89,7 @@ const Skills = () => {
             <div className='uppercase font-light tracking-[1.2px] text-center'>
               Safely Piercing
             </div>
-          </div>
+          </div> */}
           <div className='w-[150px] lg:w-[275px] flex flex-col justify-center items-center gap-y-6'>
             <CircularProgressbar
               styles={styles}

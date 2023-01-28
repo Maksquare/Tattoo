@@ -1,13 +1,15 @@
 // import images
 import Logo from '../src/img/header/logo.svg';
-import GalleryImg1 from '../src/img/gallery/1.png';
-import GalleryImg2 from '../src/img/gallery/2.png';
-import GalleryImg3 from '../src/img/gallery/3.png';
-import GalleryImg4 from '../src/img/gallery/4.png';
-import GalleryImg5 from '../src/img/gallery/5.png';
-import GalleryImg6 from '../src/img/gallery/6.png';
-import GalleryImg7 from '../src/img/gallery/7.png';
-import GalleryImg8 from '../src/img/gallery/8.png';
+import GalleryImg1 from '../src/img/gallery/1.jpg';
+import GalleryImg2 from '../src/img/gallery/2.jpg';
+import GalleryImg3 from '../src/img/gallery/3.jpg';
+import GalleryImg4 from '../src/img/gallery/4.jpg';
+import GalleryImg5 from '../src/img/gallery/5.jpg';
+import GalleryImg6 from '../src/img/gallery/6.jpg';
+import GalleryImg7 from '../src/img/gallery/7.jpg';
+import GalleryImg8 from '../src/img/gallery/8.jpg';
+import GalleryImg9 from '../src/img/gallery/9.jpg';
+import GalleryImg10 from '../src/img/gallery/10.jpg';
 import QuoteImg from '../src/img/testimonial/quote.svg';
 // import icons
 import { GrFacebookOption } from 'react-icons/gr';
@@ -30,7 +32,7 @@ export const navData = {
     { href: '/', name: 'Home' },
     { href: '/about', name: 'About' },
     { href: '/gallery', name: 'Gallery' },
-    { href: '/', name: 'Interview' },
+    { href: '/', name: 'Services' },
     { href: '/', name: 'Articles' },
     { href: '/contact', name: 'Contact' },
   ],
@@ -55,9 +57,10 @@ export const heroData = {
 export const aboutData = {
   title: 'My Story:',
   subtitle1:
-    'In velit arcu posuere integer. Dolor sit amet, consectetur nun adipiscing elit. Duis porttitor massa tellus hac vel ante sit sed scelerisque praesent duis volutpat laoreet.',
+    `
+  I am a creative tattoo artist who loves to work with new and innovative ideas. I have a strong foundation in traditional tattooing, but I am always willing to try something new to see what works best for my clients. I am a hard worker who takes pride in my work, and I am always willing to go the extra mile to make sure my clients are happy.`,
   subtitle2:
-    'Nisl, sit molestie commodo congue. Etiam lectus risus in amet. Commodo molestie fames etiam aenean sed. Pellentesque et venenatis amet, tellus hac vel adipiscing sit. Placerat vitae nisl viverra faucibus tincidunt habitasse amet. Nunc, velit nunc, scelerisque imperdiet nunc.',
+    ` I love to create beautiful art that expresses the emotions and stories of her clients. I believe in creating art that is both personal and meaningful, and I strive to provide a unique experience for each and every one of my clients.`,
   btnText: 'Know more',
   btnIcon: <IoMdArrowForward />,
 };
@@ -115,6 +118,18 @@ export const galleryData = {
       width: 465,
       height: 412,
     },
+    {
+      src: GalleryImg9,
+      original: GalleryImg9,
+      width: 465,
+      height: 540,
+    },
+    {
+      src: GalleryImg10,
+      original: GalleryImg10,
+      width: 465,
+      height: 412,
+    },
   ],
 };
 
@@ -129,16 +144,23 @@ export const testimonialData = [
   {
     quoteImg: QuoteImg,
     message:
-      "The entire team is extremely kind and friendly. They're fantastic. They're great at what they do! And it's unique.They will properly consult with you.",
-    name: 'Jack Geoffrey',
-    occupation: 'Tattoo Artist',
+      "I just wanted to say thank you so much for the tattoo service! The staff was so friendly and the process was so smooth. I am really happy with my tattoo and I will definitely be back!",
+    name: 'Abel Gizachew',
+    occupation: 'Student',
   },
   {
     quoteImg: QuoteImg,
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam culpa asperiores officia natus dignissimos autem possimus molestias aperiam?',
-    name: 'Douglas Hane',
-    occupation: 'Tattoo Artist',
+      `I just wanted to take a second to say thank you for the amazing tattoo service I received from you all. From the initial consultation to the finished product, everything was perfect. I really appreciate how professional and personal the experience was and I'm already looking forward to my next tattoo appointment!`,
+    name: 'Yeabsira Getachew ',
+    occupation: 'Model/ Fashion Designer',
+  },
+  {
+    quoteImg: QuoteImg,
+    message:
+      `I just wanted to drop you a quick note and say thank you for the amazing tattoo service I received from you all. From the initial consultation to the finished product, everything was perfect. I really appreciate how professional and personal the experience was and I'm already looking forward to my next tattoo appointment!`,
+    name: 'Henok Bedilu',
+    occupation: 'Doctor',
   },
 ];
 
@@ -146,38 +168,38 @@ export const contactData = {
   title: 'Get in touch with me:',
   info: [
     {
-      title: 'LA office',
+      title: 'Bole office',
       subtitle:
-        'In velit arcu posuere integer sit amet, consectetur nun adipiscing elit. Duis porttitor massa tellus',
+        'This is our tattoo shop located around bole and you can come and contact us on our working Hours',
       address: {
         icon: <FaMapMarkerAlt />,
-        name: '784 Norman Street, Los Angeles',
+        name: '784 bole Street, Addis Ababa',
       },
       phone: {
         icon: <FaPhoneAlt />,
-        number: '+49 93 30493943',
+        number: '+251 9123456789',
       },
       email: {
         icon: <FaEnvelope />,
-        address: 'contact@yourcompany.com',
+        address: 'contact@nattytattoo.com',
       },
       link: 'Get location',
     },
     {
-      title: 'NYC office',
+      title: 'Coming Soon',
       subtitle:
-        'Sit amet, consectetur nun in velit arcu posuere integer. Adipiscing elit duis porttitor massa tellus',
+        'Coming Soon .....',
       address: {
         icon: <FaMapMarkerAlt />,
-        name: '1630 Elm Drive, New York City',
+        name: 'Coming Soon',
       },
       phone: {
         icon: <FaPhoneAlt />,
-        number: '+49 34 36573355',
+        number: '+251 9123456789',
       },
       email: {
         icon: <FaEnvelope />,
-        address: 'contact@yourcompany.com',
+        address: 'contact@nattytattoo.com',
       },
       link: 'Get location',
     },
@@ -192,16 +214,16 @@ export const contactData = {
 
 export const footerData = {
   about: {
-    title: 'About void tattoo',
-    subtitle:
-      'Sit amet, consectetur nun in velit arcu posuere integer. Adipiscing elit duis porttitor massa tellus',
+    title: 'About Natty Tattoo',
+    subtitle: `
+    I am a creative tattoo artist who loves to work with new and innovative ideas. `,
     address: {
       icon: <FaMapMarkerAlt />,
-      name: '1630 Elm Drive, New York City',
+      name: 'Bole 123 Street, Addis Ababa City',
     },
     phone: {
       icon: <FaPhoneAlt />,
-      number: '+49 34 36573355',
+      number: '+251 9123456789',
     },
     email: {
       icon: <FaEnvelope />,
@@ -211,10 +233,10 @@ export const footerData = {
   links: {
     title: 'Useful links',
     items: [
-      { href: '/', name: 'About me' },
-      { href: '/', name: 'My gallery' },
-      { href: '/', name: 'My services' },
-      { href: '/', name: 'Contact me' },
+      { href: '/about', name: 'About me' },
+      { href: '/gallery', name: 'My gallery' },
+      { href: '/services', name: 'My services' },
+      { href: '/contact', name: 'Contact me' },
     ],
   },
   program: {
@@ -229,7 +251,7 @@ export const footerData = {
   newsletter: {
     title: 'Newsletter',
     subtitle:
-      'Elit duis porttitor massa tellus nun in velit arcu posuere integer.',
+      `Welcome to our website! Here you will find information about our organization and the services we offer. Our newsletter is a great way to stay up-to-date on what's happening with us, and to hear about new opportunities and events that we are hosting. If you would like to receive our newsletter, please enter your email address below.`,
     form: {
       placeholder: 'Your email address',
       icon: <FiSend />,

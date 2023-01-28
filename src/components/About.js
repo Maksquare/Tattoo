@@ -45,6 +45,7 @@ const About = () => {
                   <div className='text-xl'>{btnIcon}</div>
                 </button>
                 </Link>
+                
               </div>
             </div>
           </motion.div>

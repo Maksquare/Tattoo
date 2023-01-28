@@ -4,6 +4,7 @@ import { galleryData } from '../data';
 // import photo album & lightbox
 import PhotoAlbum from 'react-photo-album';
 import Lightbox from 'yet-another-react-lightbox';
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import 'yet-another-react-lightbox/styles.css';
 // import motion
 import { motion } from 'framer-motion';
@@ -12,8 +13,6 @@ import { fadeIn } from '../variants';
 
 const slides = galleryData.images.map(({ original, width, height }) => ({
   src: original,
-  width,
-  height,
 }));
 
 const GallerySection = () => {
@@ -41,17 +40,21 @@ const GallerySection = () => {
         viewport={{ once: false, amount: 0.2 }}
         className='mb-8 lg:mb-20'
       >
-        <PhotoAlbum
-          layout='rows'
+      
+
+        <PhotoAlbum 
+          layout='masonry'
           photos={images}
           onClick={(event, photo, index) => setIndex(index)}
-        />
+          />
+        
         <Lightbox
           slides={slides}
           styles={{ container: { backgroundColor: 'rgba(0,0,0,.9)' } }}
           open={index >= 0}
           index={index}
           close={() => setIndex(-1)}
+          plugins={[Zoom]}
         />
       </motion.div>
       {/* btn */}

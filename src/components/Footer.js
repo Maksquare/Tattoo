@@ -5,6 +5,7 @@ import { footerData } from '../data';
 import { motion } from 'framer-motion';
 // import variants
 import { fadeIn } from '../variants';
+import { Link } from 'react-router-dom';
 
 const staggerContainer = {
   hidden: {},
@@ -77,9 +78,9 @@ const Footer = () => {
                   const { href, name } = item;
                   return (
                     <li key={index}>
-                      <a className='hover:text-white transition' href={href}>
+                      <Link className='hover:text-white transition' to={href}>
                         {name}
-                      </a>
+                      </Link>
                     </li>
                   );
                 })}
