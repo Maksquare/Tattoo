@@ -10,6 +10,16 @@ import GalleryImg7 from '../src/img/gallery/7.jpg';
 import GalleryImg8 from '../src/img/gallery/8.jpg';
 import GalleryImg9 from '../src/img/gallery/9.jpg';
 import GalleryImg10 from '../src/img/gallery/10.jpg';
+import GalleryImg11 from '../src/img/gallery/11.jpg';
+import GalleryImg12 from '../src/img/gallery/12.jpg';
+import GalleryImg13 from '../src/img/gallery/13.jpg';
+import GalleryImg14 from '../src/img/gallery/14.jpg';
+import GalleryImg15 from '../src/img/gallery/15.jpg';
+import GalleryImg16 from '../src/img/gallery/16.jpg';
+import GalleryImg17 from '../src/img/gallery/17.jpg';
+import GalleryImg18 from '../src/img/gallery/18.jpg';
+import GalleryImg19 from '../src/img/gallery/19.jpg';
+import GalleryImg20 from '../src/img/gallery/20.jpg';
 import QuoteImg from '../src/img/testimonial/quote.svg';
 // import icons
 import { GrFacebookOption } from 'react-icons/gr';
@@ -127,6 +137,72 @@ export const galleryData = {
     {
       src: GalleryImg10,
       original: GalleryImg10,
+      width: 465,
+      height: 412,
+    },
+    {
+      src: GalleryImg11,
+      original: GalleryImg11,
+      width: 465,
+      height: 540,
+    },
+    {
+      src: GalleryImg12,
+      original: GalleryImg12,
+      width: 465,
+      height: 412,
+    },
+    {
+      src: GalleryImg13,
+      original: GalleryImg13,
+      width: 465,
+      height: 540,
+    },
+    {
+      src: GalleryImg14,
+      original: GalleryImg14,
+      width: 465,
+      height: 412,
+    },
+    {
+      src: GalleryImg15,
+      original: GalleryImg15,
+      width: 465,
+      height: 540,
+    },
+    {
+      src: GalleryImg15,
+      original: GalleryImg15,
+      width: 465,
+      height: 412,
+    },
+    {
+      src: GalleryImg16,
+      original: GalleryImg16,
+      width: 465,
+      height: 540,
+    },
+    {
+      src: GalleryImg17,
+      original: GalleryImg17,
+      width: 465,
+      height: 412,
+    },
+    {
+      src: GalleryImg18,
+      original: GalleryImg18,
+      width: 465,
+      height: 540,
+    },
+    {
+      src: GalleryImg19,
+      original: GalleryImg19,
+      width: 465,
+      height: 412,
+    },
+    {
+      src: GalleryImg20,
+      original: GalleryImg20,
       width: 465,
       height: 412,
     },
