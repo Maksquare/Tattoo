@@ -5,6 +5,7 @@ import { heroData } from '../data';
 import { motion } from 'framer-motion';
 // import variants
 import { fadeIn } from '../variants';
+import { Link } from 'react-router-dom';
 
 const container = {
   hidden: {},
@@ -44,10 +45,13 @@ const Hero = () => {
           </motion.p>
           {/* btn */}
           <motion.div variants={fadeIn('down')}>
+            <Link to={'/about'}>
             <button className='btn btn-sm lg:btn-lg btn-outline mx-auto lg:mx-0'>
               {btnText}
               <div className='text-xl'>{btnIcon}</div>
             </button>
+            </Link>
+           
           </motion.div>
         </div>
         {/* outline text */}

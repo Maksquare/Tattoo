@@ -14,8 +14,8 @@ const AboutMe = () => {
       animate={{
         scale: 1,
       }}
-
-      transition={ transition1 }
+      exit={{ scale: 0 }}
+      transition={transition1}
     >
       <About />
     </motion.div>
