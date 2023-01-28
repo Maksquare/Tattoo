@@ -21,12 +21,16 @@ const Hero = () => {
   const { title, subtitle, btnText, btnIcon } = heroData;
   return (
     <section className='bg-hero bg-cover bg-center min-h-[40vh] lg:h-[948px] bg-no-repeat relative mt-[120px] lg:mt-[150px]'>
+     
       <motion.div
         variants={container}
         initial='hidden'
         whileInView={'show'}
         className='container mx-auto min-h-[40vh] lg:h-full flex items-center justify-center xl:justify-end'
       >
+        <div className='bg-black w-[500px] z-10'>
+
+        </div>
         {/* text & btn */}
         <div className='text-white text-center lg:text-left lg:max-w-[640px]'>
           <motion.h1 variants={fadeIn('down')} className='h1'>

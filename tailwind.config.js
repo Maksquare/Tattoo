@@ -22,12 +22,14 @@ module.exports = {
     extend: {
       colors: {
         dark: '#111111',
+        accentLight: '#f7e17a',
+        accentDark: '#be8c3f',
         grey: {
           DEFAULT: '#555555',
         },
       },
       backgroundImage: {
-        hero: "url('/src/img/hero/bg.jpg')",
+        hero: "url('/src/img/hero/bg.png')",
         about: "url('/src/img/about/image.png')",
         interview: "url('/src/img/interview/bg.png')",
       },
