@@ -32,8 +32,8 @@ export const navData = {
     { href: '/', name: 'Home' },
     { href: '/about', name: 'About' },
     { href: '/gallery', name: 'Gallery' },
-    { href: '/', name: 'Services' },
-    { href: '/', name: 'Articles' },
+    { href: '/services', name: 'Services' },
+    // { href: '/', name: 'Articles' },
     { href: '/contact', name: 'Contact' },
   ],
 };

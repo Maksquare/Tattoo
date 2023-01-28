@@ -50,13 +50,13 @@ const Interview = () => {
               </div>
             </motion.div>
             {/* modal video */}
-            <ModalVideo
+            {/* <ModalVideo
               channel='youtube'
               autoplay
               isOpen={isOpen}
               videoId='_l1mqYQuNf8'
               onClose={() => setOpen(false)}
-            />
+            /> */}
           </div>
         </div>
       </div>

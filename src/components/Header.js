@@ -8,24 +8,25 @@ import Socials from './Socials';
 // import icons
 import { TiThMenuOutline } from 'react-icons/ti';
 // import link
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   // destructure header data
   const { logo } = headerData;
   const [isActive, setIsActive] = useState(false);
   const [navMobile, setNavMobile] = useState(false);
+
   // scroll event
   useEffect(() => {
     window.addEventListener('scroll', () => {
       window.scrollY > 50 ? setIsActive(true) : setIsActive(false);
     });
   });
+ 
   return (
     <header
-      className={`${
-        isActive ? 'h-[100px] lg:h-[110px] shadow-lg' : 'h-[120px] lg:h-[150px]'
-      }  bg-white fixed left-0 right-0 z-10 max-w-[1920px] w-full mx-auto transition-all duration-300`}
+      className={`${isActive ? 'h-[100px] lg:h-[110px] shadow-lg' : 'h-[120px] lg:h-[150px]'
+        }  bg-white fixed left-0 right-0 z-10 max-w-[1920px] w-full mx-auto transition-all duration-300`}
     >
       <div className='flex justify-between items-center h-full pl-[50px] pr-[60px]'>
         {/* logo */}
@@ -45,11 +46,10 @@ const Header = () => {
         </div>
         {/* nav mobile - is showing by default - hidden on desktop mode */}
         <div
-          className={`${navMobile ? 'max-h-full' : 'max-h-0 overflow-hidden'} ${
-            isActive
+          className={`${navMobile ? 'max-h-full' : 'max-h-0 overflow-hidden'} ${isActive
               ? 'top-[100px] lg:top-[110px]'
               : 'top-[120px] lg:top-[150px]'
-          } fixed left-0 -z-10 w-full h-full bg-white transition-all duration-300`}
+            } fixed left-0 -z-10 w-full h-full bg-white transition-all duration-300`}
         >
           <NavMobile />
         </div>

@@ -10,17 +10,18 @@ import Copyright from './components/Copyright';
 // import react router dom
 import { BrowserRouter as Router } from 'react-router-dom';
 import AnimaRoutes from './components/AnimaRoutes';
+import ScrollToTop from './components/ScrollToTop';
 const App = () => {
   return (
     <div className='max-w-[1920px] mx-auto overflow-hidden bg-white '>
-
       <Router>
+      <ScrollToTop />
         <Header />
         <AnimaRoutes />
         <Footer />
         <Copyright />
       </Router>
-      
+
 
       {/* <div className='h-[4000px]'></div> */}
 
