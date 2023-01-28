@@ -59,7 +59,7 @@ export const socialData = [
 export const heroData = {
   title: 'I’m Natty.',
   subtitle:
-    'Tattoos have their own unique power and magic. They not only beautify the body but also the psyche.',
+    `Tattoos are a permanent statement of your own unique self. They can be a source of great pride and personal satisfaction, or a source of embarrassment and shame. `,
   btnText: 'read more',
   btnIcon: <IoMdArrowForward />,
 };
