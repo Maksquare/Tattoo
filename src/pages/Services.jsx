@@ -8,9 +8,10 @@ import { transition1 } from "../transition1";
 const Services = () => {
   return (
     <motion.div
-    initial = {{ zoom:0}}
-    animate = {{zoom:1 }}
-    transition = { transition1}
+      className="xs:mt-20 sm:mt-20 md:mt-20 lg:mt-0"
+      initial={{ zoom: 0 }}
+      animate={{ zoom: 1 }}
+      transition={transition1}
     >
       <Skills />
     </motion.div>
