@@ -14,7 +14,7 @@ const NavMobile = () => {
         {items.map((item, index) => {
           return (
             <li key={index}>
-              <Link className='text-2xl font-primary uppercase' href={item.href}>
+              <Link className='text-2xl font-primary uppercase' to={item.href}>
                 {item.name}
               </Link>
             </li>
