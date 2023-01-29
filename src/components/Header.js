@@ -52,7 +52,7 @@ const Header = () => {
             : 'top-[120px] lg:top-[150px]'
             } fixed left-0 -z-10 w-full h-full bg-white transition-all duration-300`}
         >
-          <NavMobile />
+          <NavMobile setnavmobile={setNavMobile} navmobile = {navMobile } />
         </div>
         {/* social icons - initially hidden - is showing on desktop mode */}
         <div className='hidden xl:flex'>

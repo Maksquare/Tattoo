@@ -5,7 +5,9 @@ import { navData } from '../data';
 // import components
 import Socials from './Socials';
 
-const NavMobile = () => {
+const NavMobile = ({ setnavmobile, navmobile }) => {
+
+  
   // destructure nav data
   const { items } = navData;
   return (
@@ -14,7 +16,7 @@ const NavMobile = () => {
         {items.map((item, index) => {
           return (
             <li key={index}>
-              <Link className='text-2xl font-primary uppercase' to={item.href}>
+              <Link className='text-2xl font-primary uppercase' to={item.href} onClick = {()=>  setnavmobile(!navmobile) }>
                 {item.name}
               </Link>
             </li>
