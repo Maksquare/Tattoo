@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 // import data
 import { interviewData } from '../data';
 // import modal video
-import ModalVideo from 'react-modal-video';
+// import ModalVideo from 'react-modal-video';
 import '../modalVideo.scss';
 // import motion
 import { motion } from 'framer-motion';
@@ -11,7 +11,7 @@ import { fadeIn } from '../variants';
 
 const Interview = () => {
   // destructure interview data
-  const { title, btnText, btnIcon } = interviewData;
+  const { title } = interviewData;
   const [isOpen, setOpen] = useState(false);
   return (
     <motion.section
