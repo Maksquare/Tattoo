@@ -8,6 +8,8 @@ import { transition1 } from "../transition1";
 const Gallery = () => {
   return (
     <motion.div
+    className="xs:mt-20 sm:mt-20 md:mt-20 lg:mt-0"
+ 
       initial={{
         scale: 0,
       }}

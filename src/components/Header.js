@@ -22,16 +22,17 @@ const Header = () => {
       window.scrollY > 50 ? setIsActive(true) : setIsActive(false);
     });
   });
- 
+
   return (
     <header
       className={`${isActive ? 'h-[100px] lg:h-[110px] shadow-lg' : 'h-[120px] lg:h-[150px]'
         }  bg-white fixed left-0 right-0 z-10 max-w-[1920px] w-full mx-auto transition-all duration-300`}
+
     >
-      <div className='flex justify-between items-center h-full pl-[0px]] pr-[60px]'>
+      <div className='flex justify-between items-center h-full pl-[60px]] pr-[60px]'>
         {/* logo */}
         <Link to='/'>
-          <img className='w-[230px] h-[230px]' src={logo} alt='' />
+          <img className='w-[150px] h-[150px]' src={logo} alt='' />
         </Link>
         {/* nav - initially is hidden - show on desktop*/}
         <div className='hidden xl:flex'>
@@ -47,8 +48,8 @@ const Header = () => {
         {/* nav mobile - is showing by default - hidden on desktop mode */}
         <div
           className={`${navMobile ? 'max-h-full' : 'max-h-0 overflow-hidden'} ${isActive
-              ? 'top-[100px] lg:top-[110px]'
-              : 'top-[120px] lg:top-[150px]'
+            ? 'top-[100px] lg:top-[110px]'
+            : 'top-[120px] lg:top-[150px]'
             } fixed left-0 -z-10 w-full h-full bg-white transition-all duration-300`}
         >
           <NavMobile />

@@ -7,7 +7,7 @@ import { transition1 } from "../transition1";
 const AboutMe = () => {
   return (
     <motion.div
-      className=""
+      className="xs:mt-12 sm:mt-12 md:mt-12 lg:mt-0"
       initial={{
         scale: 0,
       }}
